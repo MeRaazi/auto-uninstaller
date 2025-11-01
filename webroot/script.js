@@ -712,7 +712,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (UI.reportBugBtn) {
         UI.reportBugBtn.addEventListener('click', () => {
-            window.open('https://github.com/meerazi/auto-uninstaller/issues', '_blank');
+            window.open('https://github.com/meraazi/auto-uninstaller/issues', '_blank');
         });
     }
 

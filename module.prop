@@ -1,6 +1,6 @@
 id=auto-uninstaller
 name=Auto Uninstaller
-version=v1.0
+version=v1.1
 versionCode=1
 author=@MeeRazi
 description=Auto uninstalls applications from the blocklist.

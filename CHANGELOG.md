@@ -1,1 +1,5 @@
-## [v1.0] - Initial Release
+### 1.1 
+-- Added "report buggs" button in settings`
+
+### 1.0
+--- Initial commit
