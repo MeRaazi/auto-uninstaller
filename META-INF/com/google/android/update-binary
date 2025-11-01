@@ -1,0 +1,13 @@
+#!/system/bin/sh
+echo "Installing KSU Prevent Install module..."
+MODDIR=/data/adb/modules/auto-uninstaller
+mkdir -p "$MODDIR"
+for f in module.prop service.sh uninstall-helper.sh default-blocklist.conf README.md; do
+  if [ -f "$f" ]; then
+    cp -a "$f" "$MODDIR/"
+  fi
+done
+chmod 755 "$MODDIR/service.sh" "$MODDIR/uninstall-helper.sh" >/dev/null 2>&1 || true
+chmod 600 "$MODDIR/default-blocklist.conf" >/dev/null 2>&1 || true
+echo "Done."
+exit 0

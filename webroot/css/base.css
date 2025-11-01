@@ -1,0 +1,117 @@
+:root {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: 'SF Mono', 'Menlo', 'monospace';
+}
+
+[data-theme="light"] {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-success: #16a34a;
+    --color-error: #dc2626;
+    --color-text-primary: #1f2937;
+    --color-text-secondary: #6b7280;
+    --color-bg-base: #f9fafb;
+    --color-bg-surface: #ffffff;
+    --color-bg-inset: #f3f4f6;
+    --color-border: #e5e7eb;
+    --color-bg-surface-rgb: 255, 255, 255;
+    --color-primary-rgb: 59, 130, 246; /* For #3b82f6 */
+    --icon-filter: invert(20%);
+}
+
+[data-theme="dark"] {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-success: #4ade80;
+    --color-error: #f87171;
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #9ca3af;
+    --color-bg-base: #111827;
+    --color-bg-surface: #1f2937;
+    --color-bg-inset: #111827;
+    --color-border: #374151;
+    --color-bg-surface-rgb: 31, 41, 55;
+    --color-primary-rgb: 59, 130, 246; /* For #3b82f6 */
+    --icon-filter: invert(100%);
+}
+
+[data-theme="amoled"] {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-success: #4ade80;
+    --color-error: #f87171;
+    --color-text-primary: #f8fafc;
+    --color-text-secondary: #9ca3af;
+    --color-bg-base: #000000;
+    --color-bg-surface: #111111;
+    --color-bg-inset: #000000;
+    --color-border: #2d2d2d;
+    --color-bg-surface-rgb: 17, 17, 17;
+    --color-primary-rgb: 59, 130, 246; /* For #3b82f6 */
+    --icon-filter: invert(100%);
+}
+
+[data-theme="solarized-light"] {
+    --color-primary: #268bd2;
+    --color-primary-hover: #2aa198;
+    --color-danger: #dc322f;
+    --color-danger-hover: #cb4b16;
+    --color-success: #859900;
+    --color-error: #dc322f;
+    --color-text-primary: #586e75;
+    --color-text-secondary: #839496;
+    --color-bg-base: #fdf6e3;
+    --color-bg-surface: #eee8d5;
+    --color-bg-inset: #fdf6e3;
+    --color-border: #93a1a1;
+    --color-bg-surface-rgb: 238, 232, 213;
+    --color-primary-rgb: 38, 139, 210; /* For #268bd2 */
+    --icon-filter: invert(20%);
+}
+
+.heart {
+    color: var(--color-danger);
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.5;
+    padding-bottom: 6rem; /* Add padding to prevent content from being hidden by the nav bar */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    font-size: 1.5rem; /* Made smaller */
+    color: var(--color-text-primary); /* Changed to monochrome */
+    margin: 0;
+    font-weight: 500; /* Made lighter */
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
