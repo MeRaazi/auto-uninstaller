@@ -12,7 +12,7 @@ BLOCKLIST="${CONFDIR}/app-blocklist.conf"
 WHITELIST="${CONFDIR}/app-whitelist.conf"
 AGGRESSIVE_MODE_CONF="${MODDIR}/aggressive_mode.conf"
 APP_SNAPSHOT_FILE="${CONFDIR}/app_snapshot.list"
-SERVICE_ENABLED_CONF="${CONFDIR}/service_enabled.conf"
+SERVICE_ENABLED_CONF="${MODDIR}/service_enabled.conf"
 API_LOGFILE="${CONFDIR}/auto-uninstaller-api.log"
 COMMAND="$1"
 

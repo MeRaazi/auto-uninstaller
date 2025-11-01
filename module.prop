@@ -4,3 +4,4 @@ version=v1.0
 versionCode=1
 author=@MeeRazi
 description=Auto uninstalls applications from the blocklist.
+updateJson=https://raw.githubusercontent.com/meraazi/auto-uninstaller/main/update.json
