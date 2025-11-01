@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
         copyLogsBtn: document.getElementById('copy-logs-btn'),
         exportLogsBtn: document.getElementById('export-logs-btn'),
         aboutBtn: document.getElementById('about-btn'),
+        reportBugBtn: document.getElementById('report-bug-btn'),
         aboutModal: document.getElementById('about-modal'),
         exportBlacklistBtn: document.getElementById('export-blacklist-btn'),
         exportWhitelistBtn: document.getElementById('export-whitelist-btn'),
@@ -707,6 +708,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     if (UI.exportLogsBtn) {
         UI.exportLogsBtn.addEventListener('click', exportLogs);
+    }
+
+    if (UI.reportBugBtn) {
+        UI.reportBugBtn.addEventListener('click', () => {
+            window.open('https://github.com/meerazi/auto-uninstaller/issues', '_blank');
+        });
     }
 
     if (UI.aboutBtn && UI.aboutModal) {
