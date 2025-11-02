@@ -1,5 +1,5 @@
 # Auto Uninstaller [KSU]
-**A useless kernelsu module to automatically uninstall bloacklisted apps.**
+**A useless kernelsu module to automatically uninstall blacklisted apps.**
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/MeRaazi/auto-uninstaller/main/.github/screenshot/home.png" width="24.5%"/>
